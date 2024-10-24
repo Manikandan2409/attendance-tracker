@@ -12,16 +12,21 @@
         android:theme="@style/Theme.AttendanceTracker"
         tools:targetApi="31">
         <activity
+            android:name=".EventBoard"
+            android:exported="false"
+            android:label="@string/title_activity_event_board" />
+        <activity
             android:name=".Dashboard"
             android:exported="false"
             android:label="@string/title_activity_dashboard"
             android:theme="@style/Theme.AttendanceTracker.NoActionBar" />
         <activity
             android:name=".Login"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -32,13 +37,8 @@
             android:theme="@style/Theme.AttendanceTracker.NoActionBar" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false"
+            android:label="@string/title_activity_main" />
     </application>
 
 </manifest>
